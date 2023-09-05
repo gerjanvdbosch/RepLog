@@ -1,0 +1,7 @@
+{
+  "name": "RepLog",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
