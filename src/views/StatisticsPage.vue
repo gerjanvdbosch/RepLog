@@ -14,14 +14,14 @@
 
       <ion-list-header>Body</ion-list-header>
       <ion-list :inset="true">
-        <ion-item>
+        <ion-item :button="true">
           <ion-label>Weight</ion-label>
-          <ion-text slot="end">75 kg</ion-text>
+          <ion-text slot="end" color="medium">75 kg</ion-text>
         </ion-item>
 
-        <ion-item>
+        <ion-item :button="true">
           <ion-label>Height</ion-label>
-          <ion-text slot="end">180 cm</ion-text>
+          <ion-text slot="end" color="medium">180 cm</ion-text>
         </ion-item>
       </ion-list>
     </ion-content>

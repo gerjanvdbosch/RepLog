@@ -10,6 +10,11 @@
             <ion-label>Exercises</ion-label>
           </ion-segment-button>
         </ion-segment>
+        <ion-buttons slot="end">
+          <ion-button>
+            <ion-icon slot="icon-only" :icon="addOutline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
 
@@ -26,6 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonHeader, IonSegment, IonSegmentButton, IonLabel, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonPage, IonHeader, IonSegment, IonSegmentButton, IonLabel, IonToolbar, IonTitle, IonContent, IonButton, IonButtons, IonIcon } from '@ionic/vue';
+import { addOutline } from 'ionicons/icons';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 </script>
