@@ -15,13 +15,8 @@
         </ion-tab-button>
 
         <ion-tab-button tab="statistics" href="/statistics">
-          <ion-icon aria-hidden="true" :icon="barChartOutline" />
+          <ion-icon aria-hidden="true" :icon="statsChart" />
           <ion-label>Statistics</ion-label>
-        </ion-tab-button>
-
-        <ion-tab-button tab="profile" href="/profile">
-          <ion-icon aria-hidden="true" :icon="personCircleOutline" />
-          <ion-label>Profile</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -30,5 +25,5 @@
 
 <script setup lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { barbellOutline, barChartOutline, timerOutline, personCircleOutline } from 'ionicons/icons';
+import { barbellOutline, statsChart, timerOutline, personCircleOutline } from 'ionicons/icons';
 </script>

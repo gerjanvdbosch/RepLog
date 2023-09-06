@@ -12,12 +12,22 @@
         </ion-toolbar>
       </ion-header>
 
-      <ExploreContainer name="Statistics" />
+      <ion-list-header>Body</ion-list-header>
+      <ion-list :inset="true">
+        <ion-item>
+          <ion-label>Weight</ion-label>
+          <ion-text slot="end">75 kg</ion-text>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Height</ion-label>
+          <ion-text slot="end">180 cm</ion-text>
+        </ion-item>
+      </ion-list>
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonListHeader, IonItem, IonLabel, IonText } from '@ionic/vue';
 </script>
