@@ -1,11 +1,11 @@
 import { createRouter, createWebHashHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import MainPage from '@/views/MainPage.vue'
+import AppPage from '@/views/AppPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: MainPage,
+    component: AppPage,
     children: [
       {
         path: '/',
@@ -16,12 +16,12 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/LogPage.vue')
       },
       {
-        path: 'routines',
-        component: () => import('@/views/RoutinesPage.vue')
+        path: 'workouts',
+        component: () => import('@/views/WorkoutsPage.vue')
       },
       {
-        path: 'statistics',
-        component: () => import('@/views/StatisticsPage.vue')
+        path: 'progress',
+        component: () => import('@/views/ProgressPage.vue')
       }
     ]
   }

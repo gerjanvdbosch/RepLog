@@ -5,18 +5,18 @@
 
       <ion-tab-bar slot="bottom">
         <ion-tab-button tab="log" href="/log">
-          <ion-icon aria-hidden="true" :icon="timerOutline" />
+          <ion-icon aria-hidden="true" :icon="timeOutline" />
           <ion-label>Log</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="routines" href="/routines">
+        <ion-tab-button tab="workouts" href="/workouts">
           <ion-icon aria-hidden="true" :icon="barbellOutline" />
-          <ion-label>Routines</ion-label>
+          <ion-label>Workouts</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="statistics" href="/statistics">
+        <ion-tab-button tab="progress" href="/progress">
           <ion-icon aria-hidden="true" :icon="statsChart" />
-          <ion-label>Statistics</ion-label>
+          <ion-label>Progress</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -25,5 +25,5 @@
 
 <script setup lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { barbellOutline, statsChart, timerOutline, personCircleOutline } from 'ionicons/icons';
+import { barbellOutline, statsChart, timeOutline, gridOutline, body } from 'ionicons/icons';
 </script>
