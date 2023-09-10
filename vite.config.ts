@@ -11,8 +11,9 @@ export default defineConfig(({ command }) => {
       vue(),
       VitePWA({ 
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'favicon.svg', 'apple-touch-icon-180x180.png'],
+        includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png'],
         manifest: {
+          "description": "RepLog",
           theme_color: "#000",
           background_color: "#000",
           icons: [
