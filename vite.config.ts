@@ -11,17 +11,22 @@ export default defineConfig(({ command }) => {
       vue(),
       VitePWA({ 
         registerType: 'autoUpdate',
+        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
         manifest: {
           theme_color: "#000",
           background_color: "#000",
           icons: [
             {
-                "src": "icon.svg",
-                "sizes": "any",
-                "type": "image/svg+xml",
-                "purpose": "maskable any"
+              src: 'pwa-192x192.png',
+              sizes: '192x192',
+              type: 'image/png'
+            },
+            {
+              src: 'pwa-512x512.png',
+              sizes: '512x512',
+              type: 'image/png'
             }
-          ],
+          ]
         },
       }),
       legacy()
