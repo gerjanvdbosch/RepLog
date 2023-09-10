@@ -13,7 +13,6 @@ export default defineConfig(({ command }) => {
         registerType: 'autoUpdate',
         includeAssets: ['favicon.ico', 'apple-touch-icon-180x180.png'],
         manifest: {
-          "description": "RepLog",
           theme_color: "#000",
           background_color: "#000",
           icons: [
