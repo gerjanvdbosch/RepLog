@@ -9,7 +9,20 @@ export default defineConfig(({ command }) => {
   const config = {
     plugins: [
       vue(),
-      VitePWA({ registerType: 'autoUpdate' }),
+      VitePWA({ 
+        registerType: 'autoUpdate',
+        manifest: {
+          theme_color: "#ffffff",
+          icons: [
+            {
+                "src": "icon.svg",
+                "sizes": "any",
+                "type": "image/svg+xml",
+                "purpose": "maskable any"
+            }
+          ],
+        },
+      }),
       legacy()
     ],
     resolve: {
