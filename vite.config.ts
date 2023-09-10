@@ -12,10 +12,11 @@ export default defineConfig(({ command }) => {
       VitePWA({ 
         registerType: 'autoUpdate',
         manifest: {
-          theme_color: "#ffffff",
+          theme_color: "#000",
+          background_color: "#000",
           icons: [
             {
-                "src": "icon.svg",
+                "src": "/icon.svg",
                 "sizes": "any",
                 "type": "image/svg+xml",
                 "purpose": "maskable any"
