@@ -1,5 +1,6 @@
 import legacy from '@vitejs/plugin-legacy'
 import vue from '@vitejs/plugin-vue'
+import { VitePWA } from 'vite-plugin-pwa';
 import path from 'path'
 import { defineConfig } from 'vite'
 
@@ -8,6 +9,7 @@ export default defineConfig(({ command }) => {
   const config = {
     plugins: [
       vue(),
+      VitePWA({ registerType: 'autoUpdate' }),
       legacy()
     ],
     resolve: {
